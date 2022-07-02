@@ -1,0 +1,279 @@
+body {
+  font-family: "Poppins", sans-serif;
+  color: #1a1c20;
+}
+
+a {
+  color: #1a1c20;
+  text-decoration: none;
+}
+
+.mainContainer {
+  width: 100%;
+  height: 98vh;
+  margin: 0 auto;
+  background-color: #ffc60b;
+}
+
+/* header container */
+
+.mainContainer .headerContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.mainContainer .headerContainer nav a {
+  font-size: 0.9em;
+  margin-left: 1.5em;
+  font-weight: bold;
+}
+
+.mainContainer .headerContainer .signinButton a {
+  padding: 0.6em 1.5em;
+  background-color: #1a1c20;
+  color: #ffd31d;
+  border-radius: 0.2em;
+}
+
+.mainContainer .headerContainer .mobWrapper {
+  display: none;
+}
+
+/* body section */
+
+.mainContainer .bodyContainer .titleContainer {
+  width: 36%;
+  margin: 7em 11.1em;
+}
+
+.mainContainer .bodyContainer .titleContainer h1 {
+  font-size: 3.5em;
+  margin-block: 0;
+}
+
+.mainContainer .bodyContainer .titleContainer p {
+  font-size: 1.5em;
+  margin-block: 0;
+}
+
+/* Form Container */
+
+.mainContainer .bodyContainer .formContainer {
+  display: flex;
+  justify-content: space-around;
+  width: 60em;
+  margin: 0 auto;
+  box-shadow: 0.2em 0.2em 2em black;
+  margin-bottom: 2em;
+}
+
+::placeholder {
+  font-family: "Poppins", sans-serif;
+  color: #1a1c20;
+  font-size: 0.9em;
+}
+
+.mainContainer .bodyContainer .formContainer .formInputs {
+  background-color: white;
+  padding: 0 1em 0 2em;
+}
+
+.mainContainer .bodyContainer .formContainer .formInputs input {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  width: 45%;
+  margin-right: 1.5em;
+  margin-bottom: 2.5em;
+  padding-bottom: 0.8em;
+}
+
+input:focus {
+  outline: none;
+}
+
+.mainContainer .bodyContainer .formContainer .formInputs .fullWidth {
+  width: 94.5%;
+}
+
+.mainContainer .bodyContainer .formContainer .formInputs textarea {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  width: 95%;
+}
+
+.mainContainer .bodyContainer .formContainer .formInputs .buttonContainer {
+  text-align: center;
+}
+
+.mainContainer
+  .bodyContainer
+  .formContainer
+  .formInputs
+  .buttonContainer
+  button {
+  padding: 0.6em 4em;
+  background-color: #ffd31d;
+  border-radius: 2em;
+  margin: 2em 0;
+  font-size: 0.9em;
+  border: 0;
+}
+
+/* Contact Info */
+
+.mainContainer .bodyContainer .formContainer .contactInfo {
+  color: #ffd31d;
+  padding: 0 2em;
+  background-color: #1a1c20;
+}
+
+.mainContainer .bodyContainer .formContainer .contactInfo h3,
+p {
+  margin-block: 0;
+  margin: 1em 0 1.5em;
+}
+
+.mainContainer .bodyContainer .formContainer .contactInfo i {
+  margin-right: 0.5em;
+  font-size: 1.5em;
+}
+
+.mainContainer
+  .bodyContainer
+  .formContainer
+  .contactInfo
+  .socialMediaIcons
+  .iconBorder {
+  padding: 0.6em 0.8em;
+}
+
+.mainContainer .bodyContainer .formContainer .contactInfo .socialMediaIcons i {
+  border: 0.06em solid #ffd31d;
+  padding: 0.65em;
+  margin-right: 1em;
+  border-radius: 50%;
+  margin-bottom: 2em;
+  font-size: 1em;
+}
+
+/* Tablet View */
+
+@media (max-width: 768px) {
+  /* header */
+
+  .mainContainer .headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .mainContainer .headerContainer nav {
+    display: none;
+  }
+
+  .mainContainer .headerContainer .mobWrapper {
+    display: block;
+    padding-right: 1em;
+  }
+
+  .mainContainer .headerContainer .mobWrapper .mobNav {
+    display: none;
+    position: absolute;
+  }
+
+  .mainContainer .headerContainer .mobWrapper .mobNav .navButton {
+    background-color: #1a1c20;
+    color: #ffc60b;
+    padding: 0.9em 1.8em;
+    margin-left: -2em;
+  }
+
+  /* .mainContainer .headerContainer .mobWrapper .mobNav a {
+    display: block;
+    margin-left: -3em;
+    margin-bottom: 0.5em;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: center;
+    color: #ffc60b;
+  } */
+
+  .mainContainer .headerContainer .mobNav .signinButton {
+    display: block;
+  }
+
+  .mainContainer .headerContainer .signinButton {
+    margin-top: 1em;
+    display: none;
+  }
+
+  .mainContainer .headerContainer .signinButton a {
+    padding: 0.3em 1em;
+  }
+
+  /* body */
+
+  .mainContainer .bodyContainer .titleContainer {
+    margin: 4em 2em;
+    width: 100%;
+  }
+
+  /* .mainContainer .bodyContainer .titleContainer h1 {
+    font-size: 2em;
+  } */
+
+  .mainContainer .bodyContainer .titleContainer p {
+    width: 50%;
+  }
+
+  /* Form */
+
+  .mainContainer .bodyContainer .formContainer {
+    display: block;
+    width: 100%;
+  }
+
+  .mainContainer .bodyContainer .formContainer .formInputs {
+    padding: 0 1em;
+  }
+
+  .mainContainer .bodyContainer .formContainer .formInputs input,
+  textarea {
+    width: 46%;
+    /* change in mobile view */
+  }
+
+  .mainContainer .bodyContainer .formContainer .formInputs .fullWidth {
+    width: 96%;
+  }
+
+  .mainContainer .bodyContainer .formContainer .formInputs button {
+    margin-left: 5.5em;
+  }
+
+  /* Contact Info */
+
+  .mainContainer .bodyContainer .formContainer .contactInfo {
+    padding: 1em;
+    text-align: center;
+  }
+
+  .mainContainer
+    .bodyContainer
+    .formContainer
+    .contactInfo
+    .socialMediaIcons
+    i {
+    margin: 0 0.6em 1.5em 0.6em;
+  }
+}
+
+/* Mobile View */
+
+@media (max-width: 400px) {
+}

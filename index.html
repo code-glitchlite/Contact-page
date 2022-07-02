@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/9beb07eea9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="mainContainer">
+      <section class="headerContainer">
+        <div class="logoContainer">
+          <h1>Logo</h1>
+        </div>
+
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">Products</a>
+          <a href="#">About Us</a>
+          <a href="#">Our Team</a>
+          <a href="#">Contact Us</a>
+        </nav>
+
+        <div class="mobWrapper">
+          <img
+            src="images/icon-burger-menu.svg"
+            alt="Mobile-menu-icon"
+            style="width: 2.5em"
+            class="burgerMenu"
+          />
+
+          <div class="mobNav">
+            <a href="#" class="navButton">Home</a>
+            <a href="#" class="navButton">Products</a>
+            <a href="#" class="navButton">About Us</a>
+            <a href="#" class="navButton">Our Team</a>
+            <a href="#" class="navButton">Contact Us</a>
+            <div class="signinButton">
+              <a href="#">Sign In</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="signinButton">
+          <a href="#">Sign In</a>
+        </div>
+      </section>
+
+      <section class="bodyContainer">
+        <div class="titleContainer">
+          <h1>Get In Touch</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+            quis quo.
+          </p>
+        </div>
+
+        <form action="get" class="formContainer">
+          <div class="formInputs">
+            <div class="sendMsgContainer">
+              <h3>Send a Message</h3>
+            </div>
+            <input
+              type="text"
+              name="fname"
+              id="fname"
+              placeholder="First Name"
+            />
+            <input
+              type="text"
+              name="lname"
+              id="lname"
+              placeholder="Last Name"
+            />
+            <input type="tel" name="phone" id="phone" placeholder="Phone" />
+            <input type="email" name="email" id="email" placeholder="E-mail" />
+            <input
+              type="text"
+              name="companyname"
+              id="companyname"
+              placeholder="Group or Company Name"
+              class="fullWidth"
+            />
+            <textarea
+              name="help"
+              id="help"
+              cols="64"
+              rows="5"
+              placeholder="How Can we help?"
+            ></textarea>
+            <div class="buttonContainer">
+              <button type="submit">Submit</button>
+            </div>
+          </div>
+
+          <div class="contactInfo">
+            <h3>Contact Info</h3>
+
+            <p><i class="fas fa-tty"></i> +123 456 789</p>
+            <p><i class="fas fa-envelope"></i>info@gmail.com</p>
+
+            <div class="socialMediaIcons">
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-facebook-f iconBorder"></i>
+              <i class="fab fa-whatsapp"></i>
+              <i class="fab fa-linkedin-in"></i>
+            </div>
+
+            <div class="mapContainer">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.8798974971264!2d72.49943481428252!3d23.028181621898717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9bdb0d155a91%3A0x7395c1af3b86b844!2sDoubleTree%20by%20Hilton%20Ahmedabad!5e0!3m2!1sen!2sin!4v1623824127235!5m2!1sen!2sin"
+                width="250"
+                height="200"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+        </form>
+      </section>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script src="script/script.js"></script>
+  </body>
+</html>
